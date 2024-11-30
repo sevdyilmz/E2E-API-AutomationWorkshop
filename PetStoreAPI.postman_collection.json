@@ -1,0 +1,292 @@
+{
+	"info": {
+		"_postman_id": "67fcd796-f614-4c2b-bb72-ebaa1bbdfee9",
+		"name": "PetStoreAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34571923"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 15,\n  \"username\": \"sevdayilmaz\",\n  \"firstName\": \"sevo\",\n  \"lastName\": \"yilmaz\",\n  \"email\": \"sevdyilmz@gmail.com\",\n  \"password\": \"test123\",\n  \"phone\": \"2122121212\",\n  \"userStatus\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Info",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/sevdayilmaz",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"sevdayilmaz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/sevdayilmaz",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"sevdayilmaz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 17,\n  \"username\": \"sevdayilmaz\",\n  \"firstName\": \"sevo\",\n  \"lastName\": \"yilmaz\",\n  \"email\": \"sevdyilmz@gmail.com\",\n  \"password\": \"test123\",\n  \"phone\": \"2122121212\",\n  \"userStatus\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/sevdayilmaz",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"sevdayilmaz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Login",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/login?username=sevdayilmaz&password=test123",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "sevdayilmaz"
+								},
+								{
+									"key": "password",
+									"value": "test123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Logout",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/logout",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create With Array",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n   {\n    \"id\": 1,\n    \"username\": \"ecoş\",\n    \"firstName\": \"ece\",\n    \"lastName\": \"ececik\",\n    \"email\": \"ece@gmail.com\",\n    \"password\": \"test123\",\n    \"phone\": \"2122121213\",\n    \"userStatus\": 0\n  },\n {\n    \"id\": 2,\n    \"username\": \"ecoş1\",\n    \"firstName\": \"ece1\",\n    \"lastName\": \"ececik1\",\n    \"email\": \"ece1@gmail.com\",\n    \"password\": \"test123\",\n    \"phone\": \"2122121214\",\n    \"userStatus\": 0\n  },\n {\n    \"id\": 3,\n    \"username\": \"ecoş2\",\n    \"firstName\": \"ece2\",\n    \"lastName\": \"ececik2\",\n    \"email\": \"ece2@gmail.com\",\n    \"password\": \"test123\",\n    \"phone\": \"2122121215\",\n    \"userStatus\": 0\n  }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/createWithArray",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"createWithArray"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create With List",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"id\": 1,\n    \"username\": \"ecoş\",\n    \"firstName\": \"ece\",\n    \"lastName\": \"ececik\",\n    \"email\": \"ece@gmail.com\",\n    \"password\": \"test123\",\n    \"phone\": \"2122121213\",\n    \"userStatus\": 0\n  },\n {\n    \"id\": 2,\n    \"username\": \"ecoş1\",\n    \"firstName\": \"ece1\",\n    \"lastName\": \"ececik1\",\n    \"email\": \"ece1@gmail.com\",\n    \"password\": \"test123\",\n    \"phone\": \"2122121214\",\n    \"userStatus\": 0\n  },\n {\n    \"id\": 3,\n    \"username\": \"ecoş2\",\n    \"firstName\": \"ece2\",\n    \"lastName\": \"ececik2\",\n    \"email\": \"ece2@gmail.com\",\n    \"password\": \"test123\",\n    \"phone\": \"2122121215\",\n    \"userStatus\": 0\n  }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/createWithList",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"createWithList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
